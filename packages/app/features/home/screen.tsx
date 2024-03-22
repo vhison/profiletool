@@ -2,6 +2,7 @@ import {
   Anchor,
   Button,
   H1,
+  H2,
   Paragraph,
   Separator,
   Sheet,
@@ -11,29 +12,39 @@ import {
 } from '@my/ui'
 import { ChevronDown, ChevronUp } from '@tamagui/lucide-icons'
 import { useState } from 'react'
-import { useLink } from 'solito/link'
+import { useRouter } from 'next/router'
 
 export function HomeScreen() {
-  const linkProps = useLink({
-    href: '/user/nate',
-  })
+  const router = useRouter()
 
+  const openUserLink = async () => {
+    router.push(`/user/vinay`)
+  }
   return (
-    <YStack f={1} jc="center" ai="center" p="$4" gap="$4">
-      <YStack gap="$4" bc="$background">
-        <H1 ta="center">Welcome to Tamagui.</H1>
+    <YStack f={1} ai="center" p="$4" gap="$4">
+      <YStack>
+        <H2> Vinay Sharma </H2>
+      </YStack>
+      <YStack>
+        <Paragraph>
+          Software Engineer | React Native | React | Next | AWS | Mobx | Redux | Responsive UI |
+          GitHub | Full stack Developer
+        </Paragraph>
+      </YStack>
+      <YStack gap="$4" bc="$background" justifyContent="center" flex={1}>
+        <H1 ta="center"> Be online and grow rapidly. </H1>
         <Paragraph ta="center">
-          Here's a basic starter to show navigating from one screen to another. This screen uses the
-          same code on Next.js and React Native.
+          Skills to create customized websites for small businesses and start-ups to be a part of
+          successful online platforms.
         </Paragraph>
 
         <Separator />
         <Paragraph ta="center">
           Made by{' '}
-          <Anchor color="$color12" href="https://twitter.com/natebirdman" target="_blank">
-            @natebirdman
+          <Anchor color="$color12" href="https://twitter.com/vhison781" target="_blank">
+            @vhison781
           </Anchor>
-          ,{' '}
+          {/* ,{' '}
           <Anchor
             color="$color12"
             href="https://github.com/tamagui/tamagui"
@@ -41,15 +52,15 @@ export function HomeScreen() {
             rel="noreferrer"
           >
             give it a ⭐️
-          </Anchor>
+          </Anchor> */}
         </Paragraph>
       </YStack>
 
-      <XStack>
-        <Button {...linkProps}>Link to user</Button>
-      </XStack>
+      {/* <XStack>
+        <Button onPress={() => openUserLink()}>Link to user</Button>
+      </XStack> */}
 
-      <SheetDemo />
+      {/* <SheetDemo /> */}
     </YStack>
   )
 }
