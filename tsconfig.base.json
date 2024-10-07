@@ -9,14 +9,15 @@
     "esModuleInterop": true,
     "preserveSymlinks": true,
     "incremental": true,
-    "jsx": "react-jsx",
-    "module": "system",
+    "jsx": "react-native",
+    "module": "esnext",
     "moduleResolution": "node",
     "noEmitOnError": false,
     "noImplicitAny": false,
     "noImplicitReturns": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
+    "experimentalDecorators": true,
     "useUnknownInCatchVariables": false,
     "preserveConstEnums": true,
     // DONT DO THIS so jsdoc will remain
@@ -26,7 +27,7 @@
     "strictNullChecks": true,
     "target": "es2020",
     "types": ["node"],
-    "lib": ["dom", "esnext"]
+    "lib": ["es2021", "dom", "esnext"]
   },
   "exclude": ["_"],
   "typeAcquisition": {

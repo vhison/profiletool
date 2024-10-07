@@ -56,9 +56,9 @@ export function HomeScreen() {
         </Paragraph>
       </YStack>
 
-      {/* <XStack>
+      <XStack>
         <Button onPress={() => openUserLink()}>Link to user</Button>
-      </XStack> */}
+      </XStack>
 
       {/* <SheetDemo /> */}
     </YStack>

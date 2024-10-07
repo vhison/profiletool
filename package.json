@@ -2,8 +2,8 @@
   "name": "profiletool",
   "private": true,
   "workspaces": [
-    "./apps/*",
-    "./packages/*"
+    "apps/next",
+    "packages/*"
   ],
   "scripts": {
     "native": "cd apps/expo && yarn start",
