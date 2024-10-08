@@ -1,13 +1,6 @@
 import { HomeScreen } from 'app/features/home/screen'
-import Head from 'next/head'
+import { LandingScreen } from 'app/features/landing/screen'
 
 export default function Page() {
-  return (
-    <>
-      <Head>
-        <title>Home</title>
-      </Head>
-      <HomeScreen />
-    </>
-  )
+  return <LandingScreen />
 }

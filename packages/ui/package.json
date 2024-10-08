@@ -5,7 +5,7 @@
     "*.css"
   ],
   "private": true,
-  "types": "./src",
+  "types": "./types/index",
   "main": "src/index.tsx",
   "module:jsx": "src",
   "files": [
@@ -13,8 +13,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tamagui-build --skip-types",
-    "watch": "tamagui-build --skip-types --watch"
+    "build": "tamagui-build",
+    "watch": "tamagui-build --watch"
   },
   "dependencies": {
     "@my/config": "0.0.1",

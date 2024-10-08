@@ -2,8 +2,8 @@
   "name": "profiletool",
   "private": true,
   "workspaces": [
-    "./apps/*",
-    "./packages/*"
+    "apps/next",
+    "packages/*"
   ],
   "scripts": {
     "native": "cd apps/expo && yarn start",
@@ -21,21 +21,25 @@
     "check-deps": "check-dependency-version-consistency ."
   },
   "resolutions": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-refresh": "^0.14.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-refresh": "0.14.0",
     "react-native-svg": "13.9.0",
     "react-native-web": "~0.19.6"
   },
   "dependencies": {
-    "@babel/runtime": "^7.18.9",
-    "@manypkg/cli": "^0.19.1",
-    "check-dependency-version-consistency": "^3.0.3",
-    "eslint": "^8.21.0",
-    "node-gyp": "^9.3.1",
-    "prettier": "^2.7.1",
-    "turbo": "^1.10.3",
-    "typescript": "^5.3.3"
+    "@babel/runtime": "7.18.9",
+    "@manypkg/cli": "0.19.1",
+    "check-dependency-version-consistency": "3.0.3",
+    "eslint": "8.21.0",
+    "expo-linear-gradient": "13.0.2",
+    "expo-modules-core": "1.12.25",
+    "i18next": "23.15.2",
+    "node-gyp": "9.3.1",
+    "prettier": "2.7.1",
+    "react-native-svg": "15.7.1",
+    "turbo": "1.10.3",
+    "typescript": "5.3.3"
   },
   "packageManager": "yarn@4.1.0"
 }
