@@ -37,14 +37,14 @@ export const Header = (props: HeaderProps) => {
   return (
     <XStack
       width={'100%'}
-      bc="$background"
-      ai="center"
+      backgroundColor="$background"
+      alignItems="center"
       justifyContent="center"
       paddingRight={20}
     >
       {isAccount && (
         <YStack
-          f={1}
+          flex={1}
           onPress={() => router.push(`/`)}
           cursor="pointer"
         >
@@ -62,16 +62,16 @@ export const Header = (props: HeaderProps) => {
       )}
       {media.md && (
         <Button
-          bc="$background"
+          backgroundColor="$background"
           size={'$3'}
           icon={Menu}
           onPress={() => null}
           marginRight={20}
         />
       )}
-      <YStack f={1}>
+      <YStack flex={1}>
         <Text
-          ta="left"
+          textAlign="left"
           color="$blue11"
           fontSize={32}
           $xs={{ fontSize: 20 }}
@@ -81,7 +81,7 @@ export const Header = (props: HeaderProps) => {
         </Text>
       </YStack>
       <YStack
-        f={1}
+        flex={1}
         alignItems="flex-end"
       >
         <XStack alignItems="center"></XStack>

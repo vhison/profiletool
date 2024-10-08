@@ -1,17 +1,23 @@
 import { XStack, YStack } from '@my/ui'
-import { ImageLi, LiTheme } from '@my/ui/components'
+import { Header, ImageLi, LiTheme } from '@my/ui/components'
+import { LandingHeader } from './component'
 
 export function LandingScreen() {
   return (
     <YStack
       f={1}
-      bc="$background"
+      bc="$sectionblue"
       width={'100%'}
       alignItems="center"
       paddingTop={40}
       gap={30}
       $sm={{ paddingTop: 20 }}
     >
+      <LandingHeader
+        onExplore={() => null}        
+        isShare={false}
+        onClick={() => null}
+      />
       <XStack
         f={1}
         flexWrap="wrap"
@@ -20,6 +26,20 @@ export function LandingScreen() {
         alignItems="center"
         gap={20}
       >
+        <Header
+          onReAnalyze={function (): void {
+            throw new Error('Function not implemented.')
+          }}
+          onSignOut={function (): void {
+            throw new Error('Function not implemented.')
+          }}
+          onReScore={function (): void {
+            throw new Error('Function not implemented.')
+          }}
+          onSwitchTheme={function (): void {
+            throw new Error('Function not implemented.')
+          }}
+        />
         <YStack
           flexBasis={'45%'}
           $sm={{ flexBasis: '100%' }}

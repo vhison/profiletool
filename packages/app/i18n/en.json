@@ -1,0 +1,33 @@
+{
+  "common": {
+    "ok": "OK!",
+    "cancel": "Cancel",
+    "reset": "Reset",
+    "back": "Back",
+    "previous": "Previous",
+    "next": "Next",
+    "email": "Email",
+    "submit": "Submit",
+    "save": "Save",
+    "download": "Download",
+    "downloadApp": "Download the app",
+    "logout": "Logout",
+    "logoutas": "Logout as User",
+    "conversation": "Chat Conversation",
+    "account": "Account",
+    "confirm": "Confirm",
+    "confirmation": "Are you sure you want to exit?",
+    "confirmsure": "Are you sure?",
+    "label": "%{label}",
+    "yes": "Yes",
+    "no": "No",
+    "skip": "Close",
+    "moreInfo": "More information",
+    "gotoSettings": "go to settings",
+    "signUp": "Sign Up",
+    "refer": "Refer",
+    "upgrade": "Upgrade",
+    "preview": "Preview",
+    "lorem": "Lorem"
+  }
+}
